@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>God Senders Cleaning Service</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🧼 God Senders Cleaning Service</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Making Spaces Shine, One Clean at a Time</h1>
+    <p>Your trusted, divine cleaning partner for homes & businesses.</p>
+
+    <div class="timer">
+      <h2>Next Clean Starts In:</h2>
+      <div id="countdown">00:00:00</div>
+    </div>
+
+    <a href="#contact" class="btn">Book Now</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>🏠 Residential Cleaning</li>
+      <li>🏢 Commercial Cleaning</li>
+      <li>🧽 Deep Cleaning</li>
+      <li>🪟 Window Cleaning</li>
+      <li>🧴 Eco-Friendly Cleaning</li>
+    </ul>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At God Senders Cleaning Service, we believe cleanliness is a calling. Our trained professionals bring care, precision, and a touch of heaven to every job.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:magobholisamkelo5@gmail.com">magobholisamkelo5@gmail.com</a></p>
+    <p>Phone: +27 718683875</p>
+  </section>
+
+  <footer>
+    <p>© 2025 God Senders Cleaning Service. All rights reserved.</p>
+  </footer>
+
+  <!-- Countdown Script -->
+  <script>
+    function startCountdown(duration, display) {
+      let timer = duration, hours, minutes, seconds;
+      setInterval(function () {
+        hours = Math.floor(timer / 3600);
+        minutes = Math.floor((timer % 3600) / 60);
+        seconds = timer % 60;
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = hours + ":" + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          timer = 0;
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      const countdownTime = 2 * 60 * 60; // 2 hours
+      const display = document.querySelector('#countdown');
+      startCountdown(countdownTime, display);
+    };
+  </script>
+</body>
+</html>

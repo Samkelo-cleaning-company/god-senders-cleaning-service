@@ -1,0 +1,120 @@
+/* General Reset & Font */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background-color: #2ecc71; /* Green */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 28px;  /* Larger font size for the header */
+  color: #1f77b4;  /* Blue color for header */
+  font-family: 'Playfair Display', serif;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* Hero Section - Background Image of Cleaning Products */
+.hero {
+  background: url('https://images.unsplash.com/photo-1595362680463-bbb5777e9d64?crop=entropy&cs=tinysrgb&fit=max&ixid=M3wzNjA3fDB8MHxwaG90by1wYWNrYWd8MXx8Y2xlYW5pbmcgaW5ncmVkaWVudHxlbnwwfHx8fDE2NjY3MzA3NzM&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 30px;
+  text-align: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e74c3c; /* Red */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.timer h2 {
+  font-size: 22px;
+  color: #f1c40f; /* Yellow */
+  margin-top: 20px;
+}
+
+#countdown {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2ecc71; /* Green */
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+/* Contact Section */
+.contact p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact a {
+  color: #2ecc71; /* Green for links */
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #27ae60;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
